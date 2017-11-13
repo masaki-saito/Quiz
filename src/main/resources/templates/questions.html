@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http.www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p th:text="${question.getQuestion()}"></p>
+<p th:text="${question.getAnswer()}"></p>
+<form action="question" method="get">
+    <input type="radio" name="answer" value="TAK" checked>YES
+    <input type="radio" name="answer" value="NIE">NO
+    <input type="submit" value="NEXT">
+</form>
+</body>
+</html>

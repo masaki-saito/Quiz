@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Result</h1>
+<p th:text="${amountOfCorrect}"></p>
+<p th:text="${correctPercentage}"></p>
+<p th:text="${message}"></p>
+<form action="/" method="get">
+    <input type="submit" value="TO START">
+</form>
+</body>
+</html>
